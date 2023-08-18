@@ -396,7 +396,8 @@ padding: 5px;
 
 .audio-details{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
 }
 
 .audio-buttons{
@@ -409,6 +410,7 @@ padding: 5px;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgb(208, 208, 208);
   gap: 5px;
+  padding: 0px 10px;
 }
 
 .audio-buttons p{
