@@ -72,16 +72,18 @@ padding: 5px;
 
 .whole-container{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     margin-top: -60px;
     position: relative;
+    width: 100%;
 }
 
 .left{
     border: 0.5px solid rgb(219, 219, 219);
     border-radius: 5px;
     background-color: white;
+    width: 30%;
 }
 
 .selector{
@@ -203,6 +205,7 @@ padding: 5px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 55%;
 }
 
 .right-header{
@@ -320,13 +323,24 @@ padding: 5px;
 
 .right-lower{
   display: flex;
+  justify-content: center;
   gap: 20px;
+  width: 100%;
 }
 
 .lower-left , .lower-right{
   border: 0.5px solid rgb(219, 219, 219);
   border-radius: 5px;
 }
+
+.lower-left{
+  width: 50%;
+}
+
+.lower-right{
+  width: 40%;
+}
+
 
 .file , .comment{
   font-weight: bolder;
@@ -351,6 +365,7 @@ padding: 5px;
 .all-audio{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   padding: 10px;
 }
@@ -360,27 +375,28 @@ padding: 5px;
   flex-direction: column;
   background-color: #f0f2f5;
   border-radius: 10px;
-  padding: 10px;
-  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 15px;
 }
 
 .audio{
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .aud{
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 
 .audio-details{
   display: flex;
-  gap: 10px;
-  padding: 10px;
+  justify-content: space-around;
 }
 
 .audio-buttons{
