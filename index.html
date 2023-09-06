@@ -511,19 +511,27 @@
                 <div class="lower-right">
                     <div class="comment">Comment</div>
                         <div class="all-comments">
-                            <div class="post-comments">Post Comments</div>
+                            <div class="post-comments">
+                                <textarea placeholder="Post Comments" class="post-comment" name="post comments" id="" cols="33" rows="6"></textarea>
+                            </div>
                             <div class="post">
-                                <button class="post-button">Post</button>
+                                <button class="post-button" onclick="addComment();">Post</button>
                             </div>
                             <div class="search-container">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <input  class="search-input" type="search"  placeholder="Search comments">
                               </div>
                               <div class="add-comments">Add comments to search...</div>
+
+                              <div class="posted-comments">
+                              </div>
                         </div>
                 </div> 
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
