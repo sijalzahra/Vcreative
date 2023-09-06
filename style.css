@@ -423,9 +423,25 @@ padding: 5px;
   font-weight: bold;
 }
 
+.lower-right{
+  position: relative;
+}
+
+.posted-comments{
+  height: 60vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.posted-comments::-webkit-scrollbar-button {
+  display: none;
+}
+
+
 .all-comments{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 10px;
   gap: 20px;
 }
@@ -438,6 +454,7 @@ textarea{
   font-size: small;
   padding: 10px;
   outline: none;
+  width: 90%;
 }
 
 .post{
@@ -471,6 +488,11 @@ i{
 .search-input {
   background: none;
   border: none;
+  outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+  display: none;
 }
 
 .search-input::placeholder {
@@ -489,16 +511,17 @@ i{
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  background-color: #f6f6f6;
+  margin: 10px 10px;
+  width: 85%;
+  border-radius: 10px;
 }
 
-.posted-comments{
-  background-color: #f6f6f6;
-}
 
 .comments-info{
   display: flex;
   align-items: center;
-  gap: 18%;
+  gap: 13%;
 }
 
 .name-com{
@@ -547,4 +570,33 @@ i{
 .commentor-name{
   font-weight: bolder;
   font-size: small;
+}
+
+.comment-success-msg {
+  background-color: #d5fcd6;
+  color: rgb(7, 73, 5);
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.comment-limit-msg ,.duplicate-comment-msg{
+  background-color: #f3d3d3;
+  color: rgb(73, 5, 5);
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
