@@ -427,7 +427,7 @@ padding: 5px;
 }
 
 .posted-comments{
-  height: 60vh;
+  height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -435,7 +435,6 @@ padding: 5px;
 .posted-comments::-webkit-scrollbar-button {
   display: none;
 }
-
 
 .all-comments{
   display: flex;
