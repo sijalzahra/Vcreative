@@ -286,8 +286,7 @@ padding: 5px;
 .stations li{
   list-style-type: none;
   color: rgb(155, 155, 155);
-  font-size: small;
-    top: -20px;
+  font-size: 10px;
 }
 
 .stations li::before{
